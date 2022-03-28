@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Mapbox GL JS Tutorials: Display a map</title>
+  <style>
+    html,
+    body,
+    #map {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    #style {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+    }
+  </style>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div id="map"></div>
+  <select id="style">
+    <option selected>argis-js-example</option>
+    <option>esri-nyc-basemap</option>
+    <option>fixed-esri-nyc-basemap</option>
+  </select>
+  <script>
+    mapboxgl.accessToken = 'MAPBOX_TOKEN';
+
+    const esriToken = 'ESRI_TOKEN';
+
+    const STYLES = {
+      'esri-nyc-basemap': 'https://www.arcgis.com/sharing/rest/content/items/3e1a00aeae81496587988075fe529f71/resources/styles/root.json',
+      'fixed-esri-nyc-basemap': './fixed-esri-nyc-basemap.json',
+      'argis-js-example': `https://basemaps-api.arcgis.com/arcgis/rest/services/styles/ArcGIS:Streets?type=style&token=${esriToken}`,
+    };
+
+    const map = new mapboxgl.Map({ 
+      container: 'map',
+      center: [-73.9776, 40.7060],
+      zoom: 10
+    });
+
+    $('#style').on('change', () => map.setStyle(STYLES[$('#style').val()])).trigger('change');
+  </script>  
+</body>
+</html>

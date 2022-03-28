@@ -1,0 +1,26 @@
+{
+  "name": "esri-mapbox-style",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prebuild": "rm -rf ./dist",
+    "build": "node build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timkeane/esri-mapbox-style"
+  },
+  "author": "Tim Keane <tkeane@doitt.nyc.gov>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/timkeane/esri-mapbox-style/issues"
+  },
+  "homepage": "https://github.com/timkeane/esri-mapbox-style/README.md",
+  "engines": {
+    "node": ">=17.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "fs-extra": "^10.0.1"
+  }
+}

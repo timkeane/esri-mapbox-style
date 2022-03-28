@@ -1,0 +1,1732 @@
+{
+  "version": 8,
+  "sprite": "https://tiles.arcgis.com/tiles/yG5s3afENB5iO9fj/arcgis/rest/services/Sample_Basemap/VectorTileServer/resources/sprites/sprite",
+  "glyphs": "https://tiles.arcgis.com/tiles/yG5s3afENB5iO9fj/arcgis/rest/services/Sample_Basemap/VectorTileServer/resources/fonts/{fontstack}/{range}.pbf",
+  "sources": {
+    "esri": {
+      "type": "vector",
+      "tiles": ["https://tiles.arcgis.com/tiles/yG5s3afENB5iO9fj/arcgis/rest/services/Sample_Basemap/VectorTileServer/tile/{z}/{y}/{x}.pbf"]
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#B8E6FF"
+      }
+    },
+    {
+      "id": "Ocean",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Ocean",
+      "layout": {},
+      "paint": {
+        "fill-color": "#B8E6FF"
+      }
+    },
+    {
+      "id": "Land/Surrounding Regions/1",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Land",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#E1E1E1"
+      }
+    },
+    {
+      "id": "Land/NYPD AOI/1",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Land",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#ECEDE3"
+      }
+    },
+    {
+      "id": "Parks/Park Boundary",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Parks",
+      "filter": [
+        "==",
+        "_symbol",
+        9
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#BFD999"
+      }
+    },
+    {
+      "id": "Parks/Pool",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Parks",
+      "filter": [
+        "==",
+        "_symbol",
+        8
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#B8E6FF"
+      }
+    },
+    {
+      "id": "Parks/Skating Rink",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Parks",
+      "filter": [
+        "==",
+        "_symbol",
+        7
+      ],
+      "minzoom": 12,
+      "layout": {},
+      "paint": {
+        "fill-color": "#D7EAB7"
+      }
+    },
+    {
+      "id": "Parks/Greenstreets",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Parks",
+      "filter": [
+        "==",
+        "_symbol",
+        6
+      ],
+      "minzoom": 12,
+      "layout": {},
+      "paint": {
+        "fill-color": "#BFD999"
+      }
+    },
+    {
+      "id": "Parks/Running Track",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Parks",
+      "filter": [
+        "==",
+        "_symbol",
+        5
+      ],
+      "minzoom": 12,
+      "layout": {},
+      "paint": {
+        "fill-color": "#E0B8B8",
+        "fill-outline-color": "#EEE6D6"
+      }
+    },
+    {
+      "id": "Parks/Court",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Parks",
+      "filter": [
+        "==",
+        "_symbol",
+        4
+      ],
+      "minzoom": 12,
+      "layout": {},
+      "paint": {
+        "fill-color": "#D7EAB7",
+        "fill-outline-color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "Parks/Golf Course",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Parks",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "minzoom": 12,
+      "layout": {},
+      "paint": {
+        "fill-color": "#95B861"
+      }
+    },
+    {
+      "id": "Parks/Football Field",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Parks",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 12,
+      "layout": {},
+      "paint": {
+        "fill-color": "#95B861"
+      }
+    },
+    {
+      "id": "Parks/Soccer Field",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Parks",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 12,
+      "layout": {},
+      "paint": {
+        "fill-color": "#95B861"
+      }
+    },
+    {
+      "id": "Parks/Baseball Softball Field",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Parks",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 12,
+      "layout": {},
+      "paint": {
+        "fill-color": "#95B861"
+      }
+    },
+    {
+      "id": "NYC Open Space",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "NYC Open Space",
+      "layout": {},
+      "paint": {
+        "fill-color": "#D0E3BF"
+      }
+    },
+    {
+      "id": "Coastal Hydrography/Wetland/1",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Coastal Hydrography",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#B8E6FF"
+      }
+    },
+    {
+      "id": "Coastal Hydrography/Wetland/0",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Coastal Hydrography",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "layout": {},
+      "paint": {
+        "fill-pattern": "Coastal Hydrography/Wetland/0"
+      }
+    },
+    {
+      "id": "Coastal Hydrography/Beach",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Coastal Hydrography",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "layout": {},
+      "paint": {
+        "fill-pattern": "Coastal Hydrography/Beach"
+      }
+    },
+    {
+      "id": "NYC Airport Runways",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "NYC Airport Runways",
+      "maxzoom": 14,
+      "layout": {},
+      "paint": {
+        "fill-color": "#E3E0D3",
+        "fill-outline-color": "#E3E0D3"
+      }
+    },
+    {
+      "id": "Inland Hydrography",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Inland Hydrography",
+      "layout": {},
+      "paint": {
+        "fill-color": "#B8E6FF"
+      }
+    },
+    {
+      "id": "Sidewalks",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Sidewalks",
+      "minzoom": 14,
+      "layout": {},
+      "paint": {
+        "fill-color": "#E5E6DF"
+      }
+    },
+    {
+      "id": "Roadbeds (Latest)/1",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Roadbeds (Latest)",
+      "minzoom": 14,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#B2B2B2",
+        "line-width": 2.66667
+      }
+    },
+    {
+      "id": "Roadbeds (Latest)/0",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Roadbeds (Latest)",
+      "minzoom": 14,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "PAVEMENTEDGE_CARTO_esri2022/above",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "PAVEMENTEDGE_CARTO_esri2022",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 14,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#B2B2B2",
+        "line-width": 1.33333
+      }
+    },
+    {
+      "id": "Centerlines/Ferry Route",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        10
+      ],
+      "minzoom": 8,
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#B2C7DC",
+        "line-dasharray": [
+          4.54545,
+          1.81818
+        ],
+        "line-width": 1.46667
+      }
+    },
+    {
+      "id": "Centerlines/Path or Trail/1",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        9
+      ],
+      "minzoom": 14,
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#9C9C9C",
+        "line-dasharray": [
+          2,
+          2
+        ],
+        "line-width": 1.33333
+      }
+    },
+    {
+      "id": "Centerlines/Path or Trail/0",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        9
+      ],
+      "minzoom": 14,
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#9C9C9C",
+        "line-dasharray": [
+          2,
+          2
+        ],
+        "line-width": 1.33333
+      }
+    },
+    {
+      "id": "Centerlines/Driveway/1",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        8
+      ],
+      "minzoom": 15,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": 2.13333
+      }
+    },
+    {
+      "id": "Centerlines/Driveway/0",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        8
+      ],
+      "minzoom": 15,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": 2.13333
+      }
+    },
+    {
+      "id": "Centerlines/Boardwalk/0",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        7
+      ],
+      "minzoom": 13,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": 2.13333
+      }
+    },
+    {
+      "id": "Centerlines/Step Street/0",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        6
+      ],
+      "minzoom": 13,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": 2.13333
+      }
+    },
+    {
+      "id": "Centerlines/Alley/0",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        5
+      ],
+      "minzoom": 13,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": 2.13333
+      }
+    },
+    {
+      "id": "Centerlines/Street/1",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        4
+      ],
+      "minzoom": 11,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": {
+          "stops": [
+            [
+              11,
+              0.5
+            ],
+            [
+              22,
+              24
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "Centerlines/Ramp/1",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "minzoom": 12,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": {
+          "stops": [
+            [
+              11,
+              1
+            ],
+            [
+              22,
+              24
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "Centerlines/Ramp_1/0",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "minzoom": 11,
+      "maxzoom": 12,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": 2.13333
+      }
+    },
+    {
+      "id": "Centerlines/Tunnel/1",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 9,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#BFBFBA",
+        "line-width": {
+          "stops": [
+            [
+              9,
+              0.666667
+            ],
+            [
+              13,
+              2.66667
+            ],
+            [
+              18,
+              24
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "Centerlines/Tunnel/0",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 9,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": {
+          "stops": [
+            [
+              9,
+              0.47619
+            ],
+            [
+              13,
+              1.90476
+            ],
+            [
+              18,
+              17.1429
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "Centerlines/Bridge/1",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 9,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#BFBFBA",
+        "line-width": {
+          "stops": [
+            [
+              9,
+              0.666667
+            ],
+            [
+              14,
+              2.66667
+            ],
+            [
+              18,
+              24
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "Centerlines/Bridge/0",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 9,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": {
+          "stops": [
+            [
+              9,
+              0.47619
+            ],
+            [
+              14,
+              1.90476
+            ],
+            [
+              18,
+              17.1429
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "Centerlines/Highway/1",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 8,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#BFBFBA",
+        "line-width": {
+          "stops": [
+            [
+              8,
+              0.666667
+            ],
+            [
+              13,
+              2.66667
+            ],
+            [
+              18,
+              26.6667
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "Centerlines/Highway/0",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Centerlines",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 8,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": {
+          "stops": [
+            [
+              8,
+              0.47619
+            ],
+            [
+              13,
+              1.90476
+            ],
+            [
+              18,
+              19.0476
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "Buildings/2",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Buildings",
+      "minzoom": 14,
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(166,166,151,0.8)",
+        "fill-translate": [
+          2.66667,
+          2.66667
+        ]
+      }
+    },
+    {
+      "id": "Buildings/1",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "Buildings",
+      "minzoom": 14,
+      "layout": {},
+      "paint": {
+        "fill-color": "#DFE0DA"
+      }
+    },
+    {
+      "id": "Buildings/0",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "Buildings",
+      "minzoom": 14,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#D9D9D1",
+        "line-width": 1.66667
+      }
+    },
+    {
+      "id": "POI/Libraries",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Libraries",
+      "minzoom": 14,
+      "layout": {
+        "icon-image": "POI/Libraries",
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": "#8335A8"
+      }
+    },
+    {
+      "id": "POI/Schools",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Schools",
+      "minzoom": 15,
+      "layout": {
+        "icon-image": "POI/Schools",
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": "#8335A8"
+      }
+    },
+    {
+      "id": "POI/Universities",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Universities",
+      "minzoom": 15,
+      "layout": {
+        "icon-image": "POI/Universities",
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": "#8335A8"
+      }
+    },
+    {
+      "id": "POI/Firehouses",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Firehouses",
+      "minzoom": 14,
+      "layout": {
+        "icon-image": "POI/Firehouses",
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": "#C93100"
+      }
+    },
+    {
+      "id": "POI/Detention Facilities",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Detention Facilities",
+      "minzoom": 13,
+      "layout": {
+        "icon-image": "POI/Detention Facilities",
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": "#4E4E4E"
+      }
+    },
+    {
+      "id": "POI/Subway Stations",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Subway Stations",
+      "minzoom": 14,
+      "layout": {
+        "icon-image": "POI/Subway Stations",
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": "#58595B"
+      }
+    },
+    {
+      "id": "POI/Subway Entrances",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Subway Entrances",
+      "minzoom": 16,
+      "layout": {
+        "icon-image": "POI/Subway Entrances",
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": "#58595B"
+      }
+    },
+    {
+      "id": "POI/Hospitals",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Hospitals",
+      "minzoom": 13,
+      "layout": {
+        "icon-image": "POI/Hospitals",
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": "#C93100"
+      }
+    },
+    {
+      "id": "POI/Ferries",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Ferries",
+      "minzoom": 14,
+      "layout": {
+        "icon-image": "POI/Ferries",
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": "#58595B"
+      }
+    },
+    {
+      "id": "POI/Bus Terminals",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Bus Terminals",
+      "minzoom": 13,
+      "layout": {
+        "icon-image": "POI/Bus Terminals",
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": "#58595B"
+      }
+    },
+    {
+      "id": "Boundaries/County Boundaries/1",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "County Boundaries",
+      "minzoom": 9,
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#ECEDE3",
+        "line-width": 1
+      }
+    },
+    {
+      "id": "Boundaries/County Boundaries/0",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "County Boundaries",
+      "minzoom": 9,
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#686868",
+        "line-dasharray": [
+          8,
+          6
+        ],
+        "line-width": 0.666667
+      }
+    },
+    {
+      "id": "Boundaries/State Boundaries/1",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "State Boundaries",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#E3DBE3",
+        "line-width": 4
+      }
+    },
+    {
+      "id": "Boundaries/State Boundaries/0",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "State Boundaries",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#828282",
+        "line-dasharray": [
+          6,
+          4
+        ],
+        "line-width": 1.33333
+      }
+    },
+    {
+      "id": "Boundaries/International Boundaries/1",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "International Boundaries",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#DBCCDB",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "Boundaries/International Boundaries/0",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "International Boundaries",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#686868",
+        "line-dasharray": [
+          7,
+          7
+        ],
+        "line-width": 1.33333
+      }
+    },
+    {
+      "id": "Boundaries/States",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "States",
+      "layout": {
+        "icon-image": "Boundaries/States",
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": "rgba(176,201,145,0)"
+      }
+    },
+    {
+      "id": "Boundaries/Countries",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Countries",
+      "layout": {
+        "icon-image": "Boundaries/Countries",
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": "rgba(168,176,247,0)"
+      }
+    },
+    {
+      "id": "Cities",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Cities",
+      "maxzoom": 11,
+      "layout": {
+        "icon-image": "Cities",
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "Tileset Components/Sprites/Light Gray Alt Shield/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Light Gray Alt Shield",
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [
+          0.0883883,
+          0.211612
+        ],
+        "text-field": "{_name}",
+        "icon-image": "Tileset Components/Sprites/Light Gray Alt Shield/Default/{_len}",
+        "icon-keep-upright": true,
+        "icon-offset": [
+          0.707107,
+          1.69289
+        ]
+      },
+      "paint": {
+        "text-color": "#000000"
+      }
+    },
+    {
+      "id": "Tileset Components/Sprites/Night Interstate Shield/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Night Interstate Shield",
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [
+          0.0883883,
+          0.211612
+        ],
+        "text-field": "{_name}",
+        "icon-image": "Tileset Components/Sprites/Night Interstate Shield/Default/{_len}",
+        "icon-keep-upright": true,
+        "icon-offset": [
+          0.707107,
+          1.69289
+        ]
+      },
+      "paint": {
+        "text-color": "#000000"
+      }
+    },
+    {
+      "id": "Tileset Components/Sprites/Light Gray Interstate Shield/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Light Gray Interstate Shield",
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [
+          0.0883883,
+          0.211612
+        ],
+        "text-field": "{_name}",
+        "icon-image": "Tileset Components/Sprites/Light Gray Interstate Shield/Default/{_len}",
+        "icon-keep-upright": true,
+        "icon-offset": [
+          0.707107,
+          1.69289
+        ]
+      },
+      "paint": {
+        "text-color": "#000000"
+      }
+    },
+    {
+      "id": "Tileset Components/Sprites/Dark Gray Alt Shield/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Dark Gray Alt Shield",
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [
+          0.0883883,
+          0.211612
+        ],
+        "text-field": "{_name}",
+        "icon-image": "Tileset Components/Sprites/Dark Gray Alt Shield/Default/{_len}",
+        "icon-keep-upright": true,
+        "icon-offset": [
+          0.707107,
+          1.69289
+        ]
+      },
+      "paint": {
+        "text-color": "#000000"
+      }
+    },
+    {
+      "id": "Tileset Components/Sprites/Dark Gray Interstate Shield/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Dark Gray Interstate Shield",
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [
+          0.0883883,
+          0.211612
+        ],
+        "text-field": "{_name}",
+        "icon-image": "Tileset Components/Sprites/Dark Gray Interstate Shield/Default/{_len}",
+        "icon-keep-upright": true,
+        "icon-offset": [
+          0.707107,
+          1.69289
+        ]
+      },
+      "paint": {
+        "text-color": "#000000"
+      }
+    },
+    {
+      "id": "Tileset Components/Sprites/Navigation Interstate Shield/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Navigation Interstate Shield",
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [
+          0.0883883,
+          0.211612
+        ],
+        "text-field": "{_name}",
+        "icon-image": "Tileset Components/Sprites/Navigation Interstate Shield/Default/{_len}",
+        "icon-keep-upright": true,
+        "icon-offset": [
+          0.707107,
+          1.69289
+        ]
+      },
+      "paint": {
+        "text-color": "#000000"
+      }
+    },
+    {
+      "id": "Tileset Components/Sprites/Night Alt Shield/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Night Alt Shield",
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [
+          0.0883883,
+          0.211612
+        ],
+        "text-field": "{_name}",
+        "icon-image": "Tileset Components/Sprites/Night Alt Shield/Default/{_len}",
+        "icon-keep-upright": true,
+        "icon-offset": [
+          0.707107,
+          1.69289
+        ]
+      },
+      "paint": {
+        "text-color": "#000000"
+      }
+    },
+    {
+      "id": "Tileset Components/Sprites/Topo Interstate Shield/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Topo Interstate Shield",
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [
+          0.0883883,
+          0.211612
+        ],
+        "text-field": "{_name}",
+        "icon-image": "Tileset Components/Sprites/Topo Interstate Shield/Default/{_len}",
+        "icon-keep-upright": true,
+        "icon-offset": [
+          0.707107,
+          1.69289
+        ]
+      },
+      "paint": {
+        "text-color": "#000000"
+      }
+    },
+    {
+      "id": "Tileset Components/Sprites/Topo Alt Shield/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Topo Alt Shield",
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [
+          0.0883883,
+          0.211612
+        ],
+        "text-field": "{_name}",
+        "icon-image": "Tileset Components/Sprites/Topo Alt Shield/Default/{_len}",
+        "icon-keep-upright": true,
+        "icon-offset": [
+          0.707107,
+          1.69289
+        ]
+      },
+      "paint": {
+        "text-color": "#000000"
+      }
+    },
+    {
+      "id": "Centerlines/label/Ferry Routes",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Centerlines/label",
+      "filter": [
+        "==",
+        "_label_class",
+        4
+      ],
+      "minzoom": 15,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 9.33333,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#34707E",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.33333
+      }
+    },
+    {
+      "id": "Centerlines/label/Paths",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Centerlines/label",
+      "filter": [
+        "==",
+        "_label_class",
+        3
+      ],
+      "minzoom": 15,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 9.33333,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#828282",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.33333
+      }
+    },
+    {
+      "id": "Parks/label/Parks",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Parks/label",
+      "minzoom": 12,
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 10.6667,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#2E8008",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.33333
+      }
+    },
+    {
+      "id": "Centerlines/label/Streets",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Centerlines/label",
+      "filter": [
+        "==",
+        "_label_class",
+        1
+      ],
+      "minzoom": 14,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 10.6667,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#595959",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.33333
+      }
+    },
+    {
+      "id": "Centerlines/label/Major Streets",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Centerlines/label",
+      "filter": [
+        "==",
+        "_label_class",
+        2
+      ],
+      "minzoom": 12,
+      "maxzoom": 14,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 9.33333,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#595959",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.33333
+      }
+    },
+    {
+      "id": "Centerlines/label/Highways",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Centerlines/label",
+      "filter": [
+        "==",
+        "_label_class",
+        0
+      ],
+      "minzoom": 8,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": [
+          "Noto Sans Bold"
+        ],
+        "text-size": 9.33333,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#4E4E4E",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.33333
+      }
+    },
+    {
+      "id": "Boundaries/Counties",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Counties",
+      "minzoom": 9,
+      "layout": {
+        "icon-image": "Boundaries/Counties",
+        "icon-allow-overlap": true,
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 13.3333,
+        "text-anchor": "center",
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "icon-color": "rgba(255,255,255,0)",
+        "text-color": "#000000"
+      }
+    },
+    {
+      "id": "Boundaries/States/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "States",
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 13.3333,
+        "text-anchor": "center",
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#000000"
+      }
+    },
+    {
+      "id": "Boundaries/Countries/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Countries",
+      "layout": {
+        "text-font": [
+          "Noto Serif Regular"
+        ],
+        "text-size": 13.3333,
+        "text-anchor": "center",
+        "text-letter-spacing": 0.2,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#000000"
+      }
+    },
+    {
+      "id": "Neighborhoods",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Neighborhoods",
+      "minzoom": 12,
+      "layout": {
+        "icon-image": "Neighborhoods",
+        "icon-allow-overlap": true,
+        "text-font": [
+          "NimbusSanL Bold"
+        ],
+        "text-size": 16,
+        "text-anchor": "center",
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "icon-color": "rgba(164,0,176,0)",
+        "text-color": "#4E4E4E",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.33333
+      }
+    },
+    {
+      "id": "City Labels",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "City Labels",
+      "minzoom": 11,
+      "layout": {
+        "icon-image": "City Labels",
+        "icon-allow-overlap": true,
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 18.6667,
+        "text-anchor": "center",
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "icon-color": "rgba(0,0,0,0)",
+        "text-color": "#4E4E4E",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.33333
+      }
+    },
+    {
+      "id": "Cities/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Cities",
+      "filter": [
+        "==",
+        "_label_class",
+        0
+      ],
+      "maxzoom": 11,
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 16,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [
+          0.373328,
+          -0.0733279
+        ],
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#4E4E4E",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.33333
+      }
+    },
+    {
+      "id": "Cities/label/New York",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Cities",
+      "filter": [
+        "==",
+        "_label_class1",
+        1
+      ],
+      "maxzoom": 11,
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 16,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [
+          0.373328,
+          -0.0733279
+        ],
+        "text-field": "{_name1}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.33333
+      }
+    },
+    {
+      "id": "Addresses",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Addresses",
+      "minzoom": 18,
+      "layout": {
+        "icon-image": "Addresses",
+        "icon-allow-overlap": true,
+        "text-font": [
+          "Noto Sans Bold"
+        ],
+        "text-size": 13.3333,
+        "text-anchor": "center",
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "icon-color": "rgba(164,0,176,0)",
+        "text-color": "#828282",
+        "text-halo-color": "#DFE0DA",
+        "text-halo-width": 1.33333
+      }
+    }
+  ]
+}
