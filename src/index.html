@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <title>Mapbox GL JS Tutorials: Display a map</title>
+  <title>esri-mapbox-style</title>
   <style>
     html,
     body,
@@ -40,9 +40,9 @@
     const esriToken = 'ESRI_TOKEN';
 
     const STYLES = {
-      'esri-nyc-basemap': 'https://www.arcgis.com/sharing/rest/content/items/3e1a00aeae81496587988075fe529f71/resources/styles/root.json',
-      'fixed-esri-nyc-basemap': './fixed-esri-nyc-basemap.json',
       'argis-js-example': `https://basemaps-api.arcgis.com/arcgis/rest/services/styles/ArcGIS:Streets?type=style&token=${esriToken}`,
+      'esri-nyc-basemap': 'https://www.arcgis.com/sharing/rest/content/items/3e1a00aeae81496587988075fe529f71/resources/styles/root.json',
+      'fixed-esri-nyc-basemap': './fixed-esri-nyc-basemap.json'
     };
 
     const map = new mapboxgl.Map({ 
