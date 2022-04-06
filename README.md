@@ -1,34 +1,20 @@
 # esri-mapbox-style
 
-Issue tracker is **ONLY** used for reporting bugs. New features should be discussed on our slack channel. Please use [stackoverflow](https://stackoverflow.com) for supporting issues.
+## This project exists to document the following issue:
 
-<!--- Provide a general summary of the issue in the Title above -->
+[The mapbox style for the NYC basemap created by ESRI fails to load in mapbox-gl-js](https://github.com/timkeane/esri-mapbox-style/issues/1)
 
-## Expected Behavior
-<!--- Tell us what should happen -->
+## A running version of the example code the reproduces the issue can be found [here](https://mapshome.nyc.gov/sandbox/esri-mapbox-style/)
 
-## Current Behavior
-<!--- Tell us what happens instead of the expected behavior -->
+### To build:
 
-## Possible Solution
-<!--- Not obligatory, but suggest a fix/reason for the bug, -->
-
-## Steps to Reproduce
-<!--- Provide a link to a live example, or an unambiguous set of steps to -->
-<!--- reproduce this bug. Include code to reproduce, if relevant -->
-1.
-2.
-3.
-4.
-
-## Context (Environment)
-<!--- How has this issue affected you? What are you trying to accomplish? -->
-<!--- Providing context helps us come up with a solution that is most useful in the real world -->
-
-<!--- Provide a general summary of the issue in the Title above -->
-
-## Detailed Description
-<!--- Provide a detailed description of the change or addition you are proposing -->
-
-## Possible Implementation
-<!--- Not obligatory, but suggest an idea for implementing addition or change -->
+1. Create a `.env` file in the root of this project and add the following variable definitions:
+```
+MAPBOX_TOKEN="your-mapbox-token-here"
+ESRI_TOKEN="your-esri-token-here"
+```
+2. Download dependencies and build with your API tokens
+```
+npm install && npm run build
+```
+3. Deploy to an HTTP Server
